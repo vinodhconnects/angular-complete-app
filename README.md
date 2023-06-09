@@ -38,3 +38,7 @@ When we are configuring angular Routing we should focus on Three things
 routes using anchor tag)  with input directive called routerLink
 instead of href
 
+3. add the routing configuration where we map paths with components
+
+
+
