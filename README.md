@@ -29,3 +29,12 @@ typically in angular, we do it in two ways
 1. Anchor tag without href
 2. Programmatically changing the url
 
+When we are configuring angular Routing we should focus on Three things
+
+1. Target Template location where the associate route component to be loaded
+(for this we call a component called router-outlet which is part of routing module)
+
+2. We should configure our anchor tags (if at all you are handling
+routes using anchor tag)  with input directive called routerLink
+instead of href
+

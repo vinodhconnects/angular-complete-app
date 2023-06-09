@@ -24,6 +24,7 @@
 #main-menu a {
     color: whitesmoke;
     text-decoration: none;
+    padding: 5px;
 }
 
 #main-menu a:hover {
