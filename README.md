@@ -41,4 +41,36 @@ instead of href
 3. add the routing configuration where we map paths with components
 
 
+#### HttpClient Service and HttpClientModule
 
+In angular applications, we extensively call Rest apis from 
+services,
+
+To Deal with rest api calls, Angular has an exclusive library
+called HttpClientModule which contains a service called HttpClient
+
+By using HttpClient we can call all http methods like GET, POST, PUT, DELETE ,PATCH etc
+
+All the above methods would return an object of type Observable
+
+#### Observable
+
+We know that Rest API calls are asynchronous in nature
+
+usually to deal with asynchronous code we use promise and
+to handle promise type we use async function and await keyword
+
+angular JS 1.x library uses promise to deal with Asynchronous code
+
+but Angular 2 and above decided to use a framework called RxJS
+
+In RxJs, We have a Type called Observable used instead of
+Promise
+
+and Observable is an object which would be waiting
+for communication from function which returned observable
+
+Difference b/w a promise and observable is promise can be resolved/rejected
+only once whereas observable can get value from the function one or more times
+and we also have option to unsubscribe an observable whereas with a promise
+it is not possible

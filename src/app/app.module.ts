@@ -11,6 +11,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { ReviewsComponent } from './pages/reviews/reviews.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ContactBoxComponent } from './pages/contact/contact-box/contact-box.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ContactBoxComponent } from './pages/contact/contact-box/contact-box.com
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
