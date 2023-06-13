@@ -30,6 +30,11 @@ export class DetailsComponent {
     }
 
     setDetail() {
-
+            this.hs.getDetails(this.id).subscribe(
+               {
+                 next:(data:details)=> this.detail =data,
+                 error: (error: any)=> {}
+               }
+            )
     }
 }
