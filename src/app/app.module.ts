@@ -13,6 +13,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ContactBoxComponent } from './pages/contact/contact-box/contact-box.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ServiceBoxComponent } from './pages/home/service-box/service-box.component';
+import { DetailsComponent } from './pages/home/details/details.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ServiceBoxComponent } from './pages/home/service-box/service-box.compon
     ReviewsComponent,
     ContactComponent,
     ContactBoxComponent,
-    ServiceBoxComponent
+    ServiceBoxComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
