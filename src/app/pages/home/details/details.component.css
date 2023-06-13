@@ -2,21 +2,22 @@
     overflow:hidden
 }
 
-h3 ,li {
+h1 ,li {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(71, 68, 68);
+    color: #474444;
+    margin: 20px;
 }
 
 .left {
     width: 30%;
     box-sizing: border-box;
-    padding: 20%;
+    padding: 10%;
     float: left;
 }
 .right{
-    width: 70%;
+    width: 60%;
     box-sizing:  border-box;
-    padding: 10%;
+    padding: 5%;
     float: left;
 }
 

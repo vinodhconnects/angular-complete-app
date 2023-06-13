@@ -17,6 +17,8 @@ export class DetailsComponent {
        this.route.params.subscribe((params)=>{
           //console.log("parameter is ",params["id"])
           this.id =params["id"]
+          this.setImage()
+          this.setDetail()
        })
     }
 
