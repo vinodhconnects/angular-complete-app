@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { details } from 'src/app/models/models';
 import { HomeService } from 'src/app/services/home.service';
 
 @Component({
@@ -9,8 +10,12 @@ import { HomeService } from 'src/app/services/home.service';
 })
 export class DetailsComponent {
     id:number=-1
+    image:string=""
+    detail:details= {id:-1,title:"",description:[]}
 
     constructor(private route:ActivatedRoute,private hs:HomeService){
-      
+       this.route.params.subscribe((params)=>{
+          console.log("parameter is ",params["id"])
+       })
     }
 }

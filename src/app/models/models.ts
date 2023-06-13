@@ -12,3 +12,10 @@ export interface service {
     description: string,
     image: string
 }
+
+export interface details
+{
+    id: number,
+    title: string,
+    description: string[]
+}
