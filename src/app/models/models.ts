@@ -19,3 +19,11 @@ export interface details
     title: string,
     description: string[]
 }
+
+export interface review {
+    id:number,
+    name:string,
+    email:string,
+    type:string,
+    message: string
+}
