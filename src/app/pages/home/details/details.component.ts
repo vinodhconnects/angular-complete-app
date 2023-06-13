@@ -15,7 +15,21 @@ export class DetailsComponent {
 
     constructor(private route:ActivatedRoute,private hs:HomeService){
        this.route.params.subscribe((params)=>{
-          console.log("parameter is ",params["id"])
+          //console.log("parameter is ",params["id"])
+          this.id =params["id"]
        })
+    }
+
+    setImage(){
+          this.hs.getService(this.id).subscribe(
+            {
+              next: (service:any) =>  this.image = service.image,
+              error: (error:any) => this.image =""
+            }
+          )
+    }
+
+    setDetail() {
+
     }
 }
