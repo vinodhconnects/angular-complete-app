@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ServiceBoxComponent } from './pages/home/service-box/service-box.component';
 import { DetailsComponent } from './pages/home/details/details.component';
 import { ReviewBoxComponent } from './pages/reviews/review-box/review-box.component';
+import { HighlightDirective } from './directives/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ReviewBoxComponent } from './pages/reviews/review-box/review-box.compon
     ContactBoxComponent,
     ServiceBoxComponent,
     DetailsComponent,
-    ReviewBoxComponent
+    ReviewBoxComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
