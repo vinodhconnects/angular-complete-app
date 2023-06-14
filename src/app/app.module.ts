@@ -16,6 +16,7 @@ import { ServiceBoxComponent } from './pages/home/service-box/service-box.compon
 import { DetailsComponent } from './pages/home/details/details.component';
 import { ReviewBoxComponent } from './pages/reviews/review-box/review-box.component';
 import { HighlightDirective } from './directives/highlight.directive';
+import { QuoteitPipe } from './pipes/quoteit.pipe';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { HighlightDirective } from './directives/highlight.directive';
     ServiceBoxComponent,
     DetailsComponent,
     ReviewBoxComponent,
-    HighlightDirective
+    HighlightDirective,
+    QuoteitPipe
   ],
   imports: [
     BrowserModule,

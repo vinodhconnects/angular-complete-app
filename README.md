@@ -74,3 +74,46 @@ Difference b/w a promise and observable is promise can be resolved/rejected
 only once whereas observable can get value from the function one or more times
 and we also have option to unsubscribe an observable whereas with a promise
 it is not possible
+# Custom Directives
+
+   We can create a custom input directive, output direct, structural directive
+  
+  We implemented Input directive
+### Pipes
+
+  Pipe  is an angular feature which is meant to do two activities
+
+  * format the the target data [ if data variable is scalar [string,number,boolean,date]]
+
+    ex:  upperCase pipe would convert target string to uppercase
+         currency pipe would convert number into currency Format based on country
+         date pipe would convert Date into a particular format based on date format given
+
+
+  * can be used to filter the values when applied on array
+
+  ex:  there is no inbuilt pipes in angular to apply on arrays
+  but we can create our own pipes, usually if we apply pipe on array
+  we filter elements
+
+
+  pipe has three parts and syntax of applying pipe is
+
+  {{ target | pipename:parameter1:parameter2.....}}
+
+   ex: 
+
+   {{price | currency: "USD"}}
+
+   price is target, currency is pipe name, USD is parameter
+
+   for pipes, parameter is not mandatory
+
+   {{name | upperCase}}
+
+   if name is raj , after apply pipe it would print RAJ
+   if prices is 3000, after applying pipe it would $3000
+
+   
+
+
