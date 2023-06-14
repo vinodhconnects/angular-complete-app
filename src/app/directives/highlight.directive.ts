@@ -11,9 +11,12 @@ export class HighlightDirective {
 
   @HostListener("mouseover")
   doSomething():void {
+    console.log(this.highlight, "working")
       let element =   this.el.nativeElement
+      element = element.children[1]
       let regex=/(good|excellent|great|super|extraordinary|satisfied)/
       if(regex.test(this.highlight.toLowerCase())) {
+        console.log("got inside")
           element.style.color ="darkred"
           element.style.fontSize="26px"
       }
@@ -21,7 +24,7 @@ export class HighlightDirective {
 
   @HostListener("mouseleave")
   turnOriginal():void {
-    let element = this.el.nativeElement
+    let element = this.el.nativeElement.children[1]
     element.style.color ="rgb(54, 54, 54)"
     element.style.fontSize="16px"
   }
