@@ -9,7 +9,10 @@ import { ReviewService } from 'src/app/services/review.service';
 })
 export class ReviewsComponent implements OnInit{
   reviews:review[]=[]
+  types:string[] =["Branding and Communication","Inbound &  Content Marketing",
+"Film &  Webinar","Digital Marketing","ECommerce & Websites","Market Analysis","All"]
 
+  selected:string="All"
   constructor(private rs:ReviewService) {
 
   }
