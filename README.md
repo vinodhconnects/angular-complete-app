@@ -117,3 +117,42 @@ it is not possible
    
 
 
+### Form Handling in Angular 
+
+   In angular to handle form we follow two approaches
+
+   1. Template based approach
+      
+         In this approach we use FormsModule and Directive called as ngModel
+
+         Advantange:
+
+           Easy and quick to implement
+
+           Two way binding
+
+         Disadvantage
+
+           No inbuilt validation features available
+           may not be suitable for handling File input  
+
+   2. Model Based Approach
+
+         We use a Class call FormBuilder to build a model for all
+         the form elements
+
+         we use other directives and Classes like formcontrol, Validator
+         etc to deal with the form
+
+         Advantage
+
+         Complex forms can be systematically handled
+         Inbuilt validations are available
+         File upload can be handled
+         any kind of form can be handled
+
+         Disadvantage
+
+         bit complex approach
+         time consuming
+         Not two way bound
