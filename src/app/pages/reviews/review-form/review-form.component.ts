@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./review-form.component.css']
 })
 export class ReviewFormComponent {
-
+  name:string=""
+  email:string=""
+  type:string=""
+  message:string=""
+  types:string[]=["Branding and Communication","Inbound &  Content Marketing",
+  "Film &  Webinar","Digital Marketing","ECommerce & Websites","Market Analysis"]
 }
