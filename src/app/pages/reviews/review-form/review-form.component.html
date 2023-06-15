@@ -27,5 +27,9 @@
             <button mat-raised-button color="primary" type="button">Post Review</button></td>
      </tr>
    </table>
-
+  <div  *ngIf="errors.length!=0">
+          <ul>
+              <li *ngFor="let x of errors">{{x}}</li>
+          </ul>
+  </div>
 </div>
