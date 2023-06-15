@@ -1,1 +1,25 @@
-<p>review-form works!</p>
+<div class="rform">
+   <table>
+      <tr>
+         <td class="item-label"> Name </td>
+         <td><input type="text" class="medium-input" [(ngModel)]="name"></td>
+      </tr>
+      <tr>
+        <td class="item-label"> Email </td>
+        <td><input type="text" class="medium-input" [(ngModel)]="email"></td>
+     </tr>
+     <tr>
+        <td class="item-label"> Type </td>
+        <td><select class="medium-input" [(ngModel)]="type"> 
+              <option *ngFor="let x of types">{{x}}</option>
+        </select></td>
+     </tr>
+
+     <tr>
+        <td class="item-label"> Message </td>
+        <td><textarea class="medium-input" [(ngModel)]="message"></textarea></td>
+     </tr>
+
+   </table>
+
+</div>
