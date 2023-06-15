@@ -29,4 +29,5 @@ input[type="text"], input[type="password"], select {
 
 textarea {
     height: 200px;
+    border: 2px solid rgb(67, 67, 67);
 }
