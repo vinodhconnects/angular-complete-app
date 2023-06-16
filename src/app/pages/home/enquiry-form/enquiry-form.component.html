@@ -1,0 +1,35 @@
+<div class="rform">
+    <h3> Post your Enquiry</h3>
+   <table>
+      <tr>
+         <td class="item-label"> Name </td>
+         <td><input type="text" class="medium-input"></td>
+      </tr>
+      <tr>
+        <td class="item-label"> Email </td>
+        <td><input type="text" class="medium-input" ></td>
+     </tr>
+     <tr>
+        <td class="item-label"> Subject </td>
+        <td><input type="text" class="large-input"></td>
+     </tr>
+
+     <tr>
+        <td class="item-label"> Description</td>
+        <td><textarea class="large-input"></textarea></td>
+     </tr>
+
+     <tr>
+    
+        <td style="text-align: center" colspan="2">
+            <button mat-raised-button color="primary" type="button"
+               (click)="postReview()"
+             >Post Review</button></td>
+     </tr>
+   </table>
+  <div  *ngIf="errors.length!=0">
+          <ul>
+              <li *ngFor="let x of errors">{{x}}</li>
+          </ul>
+  </div>
+</div>
