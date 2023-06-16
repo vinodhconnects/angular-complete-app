@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./enquiry-form.component.css']
 })
 export class EnquiryFormComponent {
+  ftoggle:boolean=false
 
+  postEnquiry():void {
+
+  }
 }

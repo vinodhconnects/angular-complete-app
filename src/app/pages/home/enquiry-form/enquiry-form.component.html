@@ -21,15 +21,24 @@
 
      <tr>
     
+        <td  colspan="2">
+            <mat-slide-toggle [(ngModel)]="ftoggle">Upload Document</mat-slide-toggle>
+        </td>
+     </tr>
+
+     <tr *ngIf="ftoggle">
+        <td class="item-label"> Upload File </td>
+        <td><input type="file" class="medium-input" ></td>
+     </tr>
+
+     <tr>
+    
         <td style="text-align: center" colspan="2">
             <button mat-raised-button color="primary" type="button"
-               (click)="postReview()"
-             >Post Review</button></td>
+               (click)="postEnquiry()"
+
+             >Post Enquiry</button></td>
      </tr>
    </table>
-  <div  *ngIf="errors.length!=0">
-          <ul>
-              <li *ngFor="let x of errors">{{x}}</li>
-          </ul>
-  </div>
+
 </div>
