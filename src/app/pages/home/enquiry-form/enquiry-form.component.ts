@@ -26,5 +26,15 @@ export class EnquiryFormComponent {
 
   }
 
+  uploadFile1(event:any) {
+  
+        const file = (event.target as HTMLInputElement).files[0];
+    this.eform.patchValue({
+      supportfile: file
+    });
+    this.eform.get('imagename').updateValueAndValidity()
+  
+  }
+
 
 }
