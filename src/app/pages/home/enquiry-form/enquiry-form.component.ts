@@ -23,7 +23,24 @@ export class EnquiryFormComponent {
  
   }
   postEnquiry():void {
-
+    let name =this.eform.get('name').value
+    let subject=this.eform.get('subject').value
+    let description=this.eform.get('description').value
+    let email=this.eform.get('email').value
+    let obj:any;
+    if(this.ftoggle){
+    var formData: any = new FormData();
+    formData.append("name",name);
+    formData.append("description",description);
+    formData.append("email",email);
+    formData.append("subject",subject);
+    formData.append("supportfile",this.eform.get('supportfile').value);
+    obj=formData
+    }
+    else {
+       obj={name:name,description:description,email:email,subject:subject}
+    }
+    
   }
 
   uploadFile1(event:any) {
@@ -32,7 +49,7 @@ export class EnquiryFormComponent {
     this.eform.patchValue({
       supportfile: file
     });
-    this.eform.get('imagename').updateValueAndValidity()
+    this.eform.get('supportfile').updateValueAndValidity()
   
   }
 
