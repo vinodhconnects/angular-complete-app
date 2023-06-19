@@ -30,6 +30,6 @@ httpOptions:any
     }
     if(!fflag)
       return this.http.post("http://localhost:5600/api/enquiries",obj,this.httpOptions)
-    return this.http.post("http://localhost:5600/api/equiries",obj)
+    return this.http.post("http://localhost:5600/api/enquiries",obj)
   }
 }

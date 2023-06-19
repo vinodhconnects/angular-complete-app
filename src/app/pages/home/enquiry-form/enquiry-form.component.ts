@@ -40,7 +40,14 @@ export class EnquiryFormComponent {
     else {
        obj={name:name,description:description,email:email,subject:subject}
     }
-    
+
+    this.hs.postEnquiry(obj,this.ftoggle).subscribe(
+       {
+         next: () => { alert("file uploaded"); location.reload()},
+         error: (x) => {console.log(x);alert("Something went wrong")}
+       }
+    )
+
   }
 
   uploadFile1(event:any) {
